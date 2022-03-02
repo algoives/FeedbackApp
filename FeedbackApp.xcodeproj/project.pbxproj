@@ -17,6 +17,7 @@
 		45F50DBE27CF15A800E913A7 /* FeedbackAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F50DBD27CF15A800E913A7 /* FeedbackAppTests.swift */; };
 		45F50DC827CF15A800E913A7 /* FeedbackAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F50DC727CF15A800E913A7 /* FeedbackAppUITests.swift */; };
 		45F50DCA27CF15A800E913A7 /* FeedbackAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F50DC927CF15A800E913A7 /* FeedbackAppUITestsLaunchTests.swift */; };
+		45F50DD727CF593300E913A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F50DD627CF593300E913A7 /* LoginViewController.swift */; };
 		8419043827CF2B0700625628 /* ViewControllerHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419043727CF2B0700625628 /* ViewControllerHomePage.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		45F50DC327CF15A800E913A7 /* FeedbackAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedbackAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F50DC727CF15A800E913A7 /* FeedbackAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAppUITests.swift; sourceTree = "<group>"; };
 		45F50DC927CF15A800E913A7 /* FeedbackAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45F50DD627CF593300E913A7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8419043727CF2B0700625628 /* ViewControllerHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				45F50DB427CF15A800E913A7 /* Info.plist */,
 				45F50DAC27CF15A700E913A7 /* FeedbackApp.xcdatamodeld */,
 				8419043727CF2B0700625628 /* ViewControllerHomePage.swift */,
+				45F50DD627CF593300E913A7 /* LoginViewController.swift */,
 			);
 			path = FeedbackApp;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F50DD727CF593300E913A7 /* LoginViewController.swift in Sources */,
 				45F50DA827CF15A700E913A7 /* ViewController.swift in Sources */,
 				45F50DA427CF15A700E913A7 /* AppDelegate.swift in Sources */,
 				8419043827CF2B0700625628 /* ViewControllerHomePage.swift in Sources */,
