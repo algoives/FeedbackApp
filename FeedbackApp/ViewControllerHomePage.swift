@@ -8,12 +8,30 @@
 import UIKit
 
 class ViewControllerHomePage: UIViewController {
-
+    
+    
+    //IB outlets
+    
+    @IBOutlet weak var imageViewHome: UIImageView!
+    @IBOutlet weak var labelWelcome: UILabel!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    @IBAction func startAction(_ sender: Any) {
+        
+        
+    }
+    
     
 
     /*
