@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864827D02F0B00909317 /* WelcomeViewController.swift */; };
 		45F50DA427CF15A700E913A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F50DA327CF15A700E913A7 /* AppDelegate.swift */; };
 		45F50DA627CF15A700E913A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F50DA527CF15A700E913A7 /* SceneDelegate.swift */; };
 		45F50DA827CF15A700E913A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F50DA727CF15A700E913A7 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45EE864827D02F0B00909317 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		45F50DA027CF15A700E913A7 /* FeedbackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F50DA327CF15A700E913A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F50DA527CF15A700E913A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				45F50DAC27CF15A700E913A7 /* FeedbackApp.xcdatamodeld */,
 				8419043727CF2B0700625628 /* ViewControllerHomePage.swift */,
 				45F50DD627CF593300E913A7 /* LoginViewController.swift */,
+				45EE864827D02F0B00909317 /* WelcomeViewController.swift */,
 			);
 			path = FeedbackApp;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				8419043827CF2B0700625628 /* ViewControllerHomePage.swift in Sources */,
 				45F50DAE27CF15A700E913A7 /* FeedbackApp.xcdatamodeld in Sources */,
 				45F50DA627CF15A700E913A7 /* SceneDelegate.swift in Sources */,
+				45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
