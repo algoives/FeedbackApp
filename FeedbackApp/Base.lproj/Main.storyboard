@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gY8-1K-sqZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6CJ-oZ-BoE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -154,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wf1-r2-0cQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1771" y="765"/>
+            <point key="canvasLocation" x="-2504" y="765"/>
         </scene>
         <!--ROOM-->
         <scene sceneID="EJk-QA-z9p">
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zaq-SL-aFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295.6521739130435" y="28.794642857142854"/>
+            <point key="canvasLocation" x="1349" y="980"/>
         </scene>
         <!--GYM-->
         <scene sceneID="WA6-rG-pel">
@@ -265,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbw-dN-cK9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="1487"/>
+            <point key="canvasLocation" x="-75" y="980"/>
         </scene>
         <!--FOOD-->
         <scene sceneID="KFx-7J-Ql9">
@@ -281,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vcy-Jf-vGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1233" y="842"/>
+            <point key="canvasLocation" x="683" y="980"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Lsk-Oi-2H0">
@@ -301,7 +301,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J31-VN-xS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="765"/>
+            <point key="canvasLocation" x="345" y="29"/>
         </scene>
         <!--Thank You View Controller-->
         <scene sceneID="APb-X3-dfi">
@@ -429,7 +429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rp4-4q-E3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2157" y="29"/>
+            <point key="canvasLocation" x="1097" y="1720"/>
         </scene>
         <!--View Controller Home Page-->
         <scene sceneID="j8e-qS-HUf">
@@ -477,6 +477,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQ8-gt-ObW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2196" y="29"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="R4b-fF-CbZ">
+            <objects>
+                <viewController storyboardIdentifier="register" modalPresentationStyle="fullScreen" id="38v-Zf-tfY" customClass="RegisterViewController" customModule="FeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DwM-lj-fxg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REGISTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oe-yH-KpB">
+                                <rect key="frame" x="126" y="114" width="188" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PXT-uc-Cab">
+                                <rect key="frame" x="134" y="240" width="164" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOx-hN-gb3">
+                                <rect key="frame" x="126" y="373" width="164" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="REPEAT PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ylY-6g-k9H">
+                                <rect key="frame" x="125" y="524" width="164" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO3-x4-cqK">
+                                <rect key="frame" x="125" y="663" width="165" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerUser:" destination="38v-Zf-tfY" eventType="touchUpInside" id="2T9-wS-87I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vnO-cs-MkF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmedPassword" destination="ylY-6g-k9H" id="BRC-JL-5vK"/>
+                        <outlet property="emailTextField" destination="PXT-uc-Cab" id="CpB-i3-roy"/>
+                        <outlet property="passwordTextField" destination="hOx-hN-gb3" id="pQ8-b6-ElU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVY-wZ-hWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1423" y="-476"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="3Pj-HA-4CW">
@@ -554,6 +612,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="29"/>
                                                 </buttonConfiguration>
                                                 <connections>
+                                                    <action selector="signIn:" destination="6CJ-oZ-BoE" eventType="touchUpInside" id="iLi-x1-gSP"/>
                                                     <segue destination="Tgb-ag-52m" kind="show" id="tM6-Uu-Xyk"/>
                                                 </connections>
                                             </button>
@@ -563,6 +622,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Sign up">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="29"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signUp:" destination="6CJ-oZ-BoE" eventType="touchUpInside" id="NaZ-gR-xnD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -590,7 +652,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmI-2L-ONl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1352" y="29"/>
+            <point key="canvasLocation" x="-1423" y="183"/>
         </scene>
         <!--Services View Controller-->
         <scene sceneID="H0e-lz-Tmo">
@@ -642,7 +704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63m-Xt-80z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2494" y="765"/>
+            <point key="canvasLocation" x="-3730" y="981"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="un9-5H-sS2">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595E17727D326A400D26A3C /* RegisterViewController.swift */; };
 		45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864827D02F0B00909317 /* WelcomeViewController.swift */; };
 		45EE864D27D049A100909317 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864C27D049A100909317 /* ServicesViewController.swift */; };
 		45EE864F27D0549900909317 /* RoomSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864E27D0549900909317 /* RoomSurveyViewController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4595E17727D326A400D26A3C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		45EE864827D02F0B00909317 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		45EE864C27D049A100909317 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		45EE864E27D0549900909317 /* RoomSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSurveyViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				45EE864E27D0549900909317 /* RoomSurveyViewController.swift */,
 				45EE865327D075EC00909317 /* RoomViewController.swift */,
 				45EE865527D08ED800909317 /* ThankYouViewController.swift */,
+				4595E17727D326A400D26A3C /* RegisterViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				45EE865427D075EC00909317 /* RoomViewController.swift in Sources */,
 				8419043827CF2B0700625628 /* ViewControllerHomePage.swift in Sources */,
 				45F50DAE27CF15A700E913A7 /* FeedbackApp.xcdatamodeld in Sources */,
+				4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */,
 				45EE865627D08ED800909317 /* ThankYouViewController.swift in Sources */,
 				45F50DA627CF15A700E913A7 /* SceneDelegate.swift in Sources */,
 				45EE865C27D0A4AE00909317 /* Star1TableViewCell.swift in Sources */,
