@@ -11,6 +11,8 @@
 		45C0F39F27D472AE00C7CC2C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */; };
 		45C0F3A027D472AE00C7CC2C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */; };
 		45C0F3A227D478D500C7CC2C /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */; };
+		45C0F3C827D5647C00C7CC2C /* Rating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3C627D5647C00C7CC2C /* Rating+CoreDataClass.swift */; };
+		45C0F3C927D5647C00C7CC2C /* Rating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3C727D5647C00C7CC2C /* Rating+CoreDataProperties.swift */; };
 		45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864827D02F0B00909317 /* WelcomeViewController.swift */; };
 		45EE864D27D049A100909317 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864C27D049A100909317 /* ServicesViewController.swift */; };
 		45EE864F27D0549900909317 /* RoomSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864E27D0549900909317 /* RoomSurveyViewController.swift */; };
@@ -56,6 +58,8 @@
 		45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
+		45C0F3C627D5647C00C7CC2C /* Rating+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rating+CoreDataClass.swift"; sourceTree = "<group>"; };
+		45C0F3C727D5647C00C7CC2C /* Rating+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rating+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		45EE864827D02F0B00909317 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		45EE864C27D049A100909317 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		45EE864E27D0549900909317 /* RoomSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSurveyViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 		45F50D9727CF15A700E913A7 = {
 			isa = PBXGroup;
 			children = (
+				45C0F3C627D5647C00C7CC2C /* Rating+CoreDataClass.swift */,
+				45C0F3C727D5647C00C7CC2C /* Rating+CoreDataProperties.swift */,
 				45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */,
 				45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */,
 				45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */,
@@ -326,6 +332,7 @@
 				45EE865A27D0A02400909317 /* Stars3TableViewCell.swift in Sources */,
 				45EE865227D062DF00909317 /* QuestionTableViewCell.swift in Sources */,
 				45EE865827D09A7200909317 /* OverAllTableViewCell.swift in Sources */,
+				45C0F3C927D5647C00C7CC2C /* Rating+CoreDataProperties.swift in Sources */,
 				45F50DA827CF15A700E913A7 /* ViewController.swift in Sources */,
 				45EE864F27D0549900909317 /* RoomSurveyViewController.swift in Sources */,
 				45EE864D27D049A100909317 /* ServicesViewController.swift in Sources */,
@@ -340,6 +347,7 @@
 				45F50DA627CF15A700E913A7 /* SceneDelegate.swift in Sources */,
 				45C0F3A227D478D500C7CC2C /* DataBaseHelper.swift in Sources */,
 				45EE865C27D0A4AE00909317 /* Star1TableViewCell.swift in Sources */,
+				45C0F3C827D5647C00C7CC2C /* Rating+CoreDataClass.swift in Sources */,
 				45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
