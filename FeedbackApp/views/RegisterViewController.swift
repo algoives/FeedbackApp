@@ -67,30 +67,23 @@ class RegisterViewController: UIViewController {
         }
         
         
-        
-        
-       // alertAndCallNextView()
-        
-        
-      //  display alert message
-     /*  var alert = UIAlertController(title: "Alert", message: "Succefull registration thank you", preferredStyle: UIAlertController.Style.alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default){
-          action in self.dismiss(animated: true, completion: nil)
-       }
-        
-        alert.addAction(okAction)
-        self.present(alert, animated: true, completion: nil)*/
-        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nexViewController = storyboard?.instantiateViewController(withIdentifier: "welcome") as? WelcomeViewController
         self.present(nexViewController!, animated: true, completion: nil)
         
+        
+        //save data in data core
+        
+        DataBaseHelper.dataBaseHelper.addUser(newEmail: userEmail)
+        
+        
+        
     }
+    
+    
     
     fileprivate func alertAndCallNextView() {
      
-        
         //display alert message
         var alert = UIAlertController(title: "Alert", message: "Succefull registration thank you", preferredStyle: UIAlertController.Style.alert)
         
