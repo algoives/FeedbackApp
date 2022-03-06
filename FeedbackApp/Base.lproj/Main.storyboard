@@ -28,7 +28,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="87t-m1-0xB">
             <objects>
-                <viewController id="Tgb-ag-52m" customClass="WelcomeViewController" customModule="FeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcome" id="Tgb-ag-52m" customClass="WelcomeViewController" customModule="FeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rAS-Hy-82V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +161,7 @@
             <objects>
                 <viewController id="1bC-Ev-LQg" customClass="RoomViewController" customModule="FeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jRm-B9-TeN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Was your stay pleasant and confortable?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGc-J1-OLF">
@@ -256,7 +256,7 @@
             <objects>
                 <viewController id="LhF-Fc-sz6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dio-tc-JjP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="nXV-ay-24C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -272,7 +272,7 @@
             <objects>
                 <viewController id="AKH-KW-1FD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N58-i4-Vkh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="NSj-xf-qDY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -308,7 +308,7 @@
             <objects>
                 <viewController id="e7a-rH-uuC" customClass="ThankYouViewController" customModule="FeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mq5-r0-d7U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for staying whit us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gh-ZT-yMJ">
@@ -613,7 +613,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="signIn:" destination="6CJ-oZ-BoE" eventType="touchUpInside" id="iLi-x1-gSP"/>
-                                                    <segue destination="Tgb-ag-52m" kind="show" id="tM6-Uu-Xyk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiw-Uw-3LI">
