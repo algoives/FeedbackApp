@@ -12,11 +12,26 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var lwelcomeLabel: UILabel!
     
     
+    @IBOutlet weak var userName: UILabel!
+    
+    var nameToShow = " "
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        userName.text =  laodUserEmail("God")
+    }
+    
+    
+    //function to load name or email from user
+    func laodUserEmail(_ sender: Any) -> String{
+        let users = DataBaseHelper.dataBaseHelper.getUser()
+        
+        for user in users {
+            nameToShow = user.email!
+        }
+        return nameToShow
     }
     
     
