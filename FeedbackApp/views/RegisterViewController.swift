@@ -59,7 +59,7 @@ class RegisterViewController: UIViewController {
         
         if SecItemAdd(attri as CFDictionary, nil) == noErr {
             print("user safe succefully in the keychain")
-            displayAlert(userMessage: "Sig up was succefull")
+          //  displayAlert(userMessage: "Sig up was succefull")
         }else{
             print("something went wrong triying to save the user in keychain")
             displayAlert(userMessage: "sorry something went wrong ,try again ")
@@ -69,16 +69,27 @@ class RegisterViewController: UIViewController {
         
         
         
-        alertAndCallNextView()
-        
-        //
+       // alertAndCallNextView()
         
         
+      //  display alert message
+     /*  var alert = UIAlertController(title: "Alert", message: "Succefull registration thank you", preferredStyle: UIAlertController.Style.alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default){
+          action in self.dismiss(animated: true, completion: nil)
+       }
+        
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)*/
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nexViewController = storyboard?.instantiateViewController(withIdentifier: "welcome") as? WelcomeViewController
+        self.present(nexViewController!, animated: true, completion: nil)
         
     }
     
     fileprivate func alertAndCallNextView() {
-        
+     
         
         //display alert message
         var alert = UIAlertController(title: "Alert", message: "Succefull registration thank you", preferredStyle: UIAlertController.Style.alert)
@@ -89,6 +100,11 @@ class RegisterViewController: UIViewController {
         
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
+        
+        
+      
+        
+        
     }
     
     
