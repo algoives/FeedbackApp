@@ -52,6 +52,13 @@
                                     <segue destination="AEI-ay-zxX" kind="show" id="aFz-wf-rVR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53t-8v-aIj">
+                                <rect key="frame" x="103" y="270" width="207" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mW1-B3-854"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,11 +66,12 @@
                     <navigationItem key="navigationItem" id="6WE-YT-fbH"/>
                     <connections>
                         <outlet property="lwelcomeLabel" destination="kTX-Ur-Aay" id="8c7-W3-jdU"/>
+                        <outlet property="userName" destination="53t-8v-aIj" id="9ox-2v-fon"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vs-p2-lqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-514" y="29"/>
+            <point key="canvasLocation" x="-514.49275362318849" y="28.794642857142854"/>
         </scene>
         <!--Room Survey View Controller-->
         <scene sceneID="3YB-B7-4Yc">

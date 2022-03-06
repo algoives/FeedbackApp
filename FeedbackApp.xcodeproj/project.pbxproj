@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595E17727D326A400D26A3C /* RegisterViewController.swift */; };
+		45C0F39F27D472AE00C7CC2C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */; };
+		45C0F3A027D472AE00C7CC2C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */; };
+		45C0F3A227D478D500C7CC2C /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */; };
 		45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864827D02F0B00909317 /* WelcomeViewController.swift */; };
 		45EE864D27D049A100909317 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864C27D049A100909317 /* ServicesViewController.swift */; };
 		45EE864F27D0549900909317 /* RoomSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864E27D0549900909317 /* RoomSurveyViewController.swift */; };
@@ -50,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		4595E17727D326A400D26A3C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 		45EE864827D02F0B00909317 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		45EE864C27D049A100909317 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		45EE864E27D0549900909317 /* RoomSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSurveyViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +138,9 @@
 		45F50D9727CF15A700E913A7 = {
 			isa = PBXGroup;
 			children = (
+				45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */,
+				45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */,
+				45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */,
 				45F50DA227CF15A700E913A7 /* FeedbackApp */,
 				45F50DBC27CF15A800E913A7 /* FeedbackAppTests */,
 				45F50DC627CF15A800E913A7 /* FeedbackAppUITests */,
@@ -321,12 +330,15 @@
 				45EE864F27D0549900909317 /* RoomSurveyViewController.swift in Sources */,
 				45EE864D27D049A100909317 /* ServicesViewController.swift in Sources */,
 				45F50DA427CF15A700E913A7 /* AppDelegate.swift in Sources */,
+				45C0F3A027D472AE00C7CC2C /* User+CoreDataProperties.swift in Sources */,
+				45C0F39F27D472AE00C7CC2C /* User+CoreDataClass.swift in Sources */,
 				45EE865427D075EC00909317 /* RoomViewController.swift in Sources */,
 				8419043827CF2B0700625628 /* ViewControllerHomePage.swift in Sources */,
 				45F50DAE27CF15A700E913A7 /* FeedbackApp.xcdatamodeld in Sources */,
 				4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */,
 				45EE865627D08ED800909317 /* ThankYouViewController.swift in Sources */,
 				45F50DA627CF15A700E913A7 /* SceneDelegate.swift in Sources */,
+				45C0F3A227D478D500C7CC2C /* DataBaseHelper.swift in Sources */,
 				45EE865C27D0A4AE00909317 /* Star1TableViewCell.swift in Sources */,
 				45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */,
 			);
