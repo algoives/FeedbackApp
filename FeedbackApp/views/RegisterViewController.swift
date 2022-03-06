@@ -4,7 +4,7 @@
 //
 //  Created by Ives Murillo on 3/5/22.
 //
-
+import Security
 import UIKit
 
 class RegisterViewController: UIViewController {
@@ -26,11 +26,13 @@ class RegisterViewController: UIViewController {
     
 
    
+  
+    
     @IBAction func registerUser(_ sender: Any) {
         //get input
         let userEmail = emailTextField.text!
-        let userPassword = passwordTextField.text!
-        let confirmedPass = confirmedPassword.text!
+        let userPassword = passwordTextField.text!.data(using: .utf8)!
+        let confirmedPass = confirmedPassword.text!.data(using: .utf8)!
         
         //CHECK FOR EMTY FIELDS
         if(userEmail.isEmpty || userPassword.isEmpty || confirmedPass.isEmpty){
@@ -47,10 +49,36 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        //store data
-        UserDefaults.standard.set(userEmail, forKey: "userEmail")
-        UserDefaults.standard.set(userEmail, forKey: "userPassword")
-        UserDefaults.standard.synchronize()
+        //create attributes to save in keychain
+        //create a dictionary type string : any to represent the keychain
+        let attri : [String : Any] = [kSecClass as String : kSecClassGenericPassword,
+                                           kSecAttrAccount as String : userEmail,
+                                           kSecValueData as String : userPassword]
+        
+        //Add user
+        
+        if SecItemAdd(attri as CFDictionary, nil) == noErr {
+            print("user safe succefully in the keychain")
+            displayAlert(userMessage: "Sig up was succefull")
+        }else{
+            print("something went wrong triying to save the user in keychain")
+            displayAlert(userMessage: "sorry something went wrong ,try again ")
+            return
+        }
+        
+        
+        
+        
+        alertAndCallNextView()
+        
+        //
+        
+        
+        
+    }
+    
+    fileprivate func alertAndCallNextView() {
+        
         
         //display alert message
         var alert = UIAlertController(title: "Alert", message: "Succefull registration thank you", preferredStyle: UIAlertController.Style.alert)
@@ -61,12 +89,8 @@ class RegisterViewController: UIViewController {
         
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-        
-        //
-        
-        
-        
     }
+    
     
     
     //display alert message fucntion

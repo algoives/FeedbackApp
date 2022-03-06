@@ -19,14 +19,15 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var signUpButton: UIButton!
     
-    private var user : String
-    private var password : String
+    var user : String = " "
+    var password : String = " "
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         
         userText.layer.cornerRadius = 22
         passwordText.layer.cornerRadius = 22
@@ -35,12 +36,85 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Disposse resosurces
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //clear out the text fields
+        userText.text = nil
+        passwordText.text = nil
+        
+    }
+    
 
   //IB Actions
     
     
     @IBAction func signIn(_ sender: Any) {
-        fetchUser()
+       print("you tapped loguin button")
+        if(userText.text!.isEmpty || passwordText.text!.isEmpty){
+            showAlertView(msg: "Email and password are required")
+            return
+        }
+        
+        let username = userText.text!
+
+        // Set query
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: username,
+            kSecMatchLimit as String: kSecMatchLimitOne,
+            kSecReturnAttributes as String: true,
+            kSecReturnData as String: true,
+        ]
+        var item: CFTypeRef?
+
+        // Check if user exists in the keychain
+        if SecItemCopyMatching(query as CFDictionary, &item) == noErr {
+            // Extract result
+            if let existingItem = item as? [String: Any],
+               let username = existingItem[kSecAttrAccount as String] as? String,
+               let passwordData = existingItem[kSecValueData as String] as? Data,
+               let password = String(data: passwordData, encoding: .utf8)
+            {
+                print(username)
+                print(password)
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let nexViewController = storyboard?.instantiateViewController(withIdentifier: "welcome") as? WelcomeViewController
+                self.present(nexViewController!, animated: true, completion: nil)            }
+        } else {
+            showAlertView(msg: "YOu are not register yet")
+        }
+        
+        
+        //set up query
+        
+        /*let query : [String : Any] = [ kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : userText.text!, kSecReturnAttributes as String : true, kSecReturnData as String : true]
+        var res : CFTypeRef?
+        
+        // check if user and password exist in keychain
+        if SecItemCopyMatching(query as CFDictionary, &res) == noErr {
+            if let item = res as? [String : Any],
+               let user = item [ kSecAttrAccount as String] as? String,
+               let password = item [ kSecValueData as String] as? Data,
+               let pass = String(data: password, encoding: .utf8){
+                if(user != userText.text){
+                    showAlertView(msg: "Sorry ,the email provided doesnt exist in our database")
+                    return
+                }else if(pass != passwordText.text){
+                    showAlertView(msg: "Sorry, password is incorrect")
+                    return
+                }
+            }
+         
+        }*/
+        
+       
+        
+       
         
     }
     
@@ -50,18 +124,55 @@ class LoginViewController: UIViewController {
     
     @IBAction func signUp(_ sender: Any) {
 
-        
-
-        addUser()
+        print("you tapped register button")
         createRegisterPage()
+
     }
     
-    fileprivate func fetchUser() {
+    //Alert function
+    func showAlertView(msg: String){
+        let alertController = UIAlertController(title: "Usder Autentication", message: msg, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alertController.addAction(okButton)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    fileprivate func fetchUser() -> Bool{
         //Set query
         let query : [String : Any] = [ kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : user, kSecReturnAttributes as String : true, kSecReturnData as String : true]
         var res : CFTypeRef?
         
-        executeQuery(query, &res)
+        return  executeQuery(query, &res)
     }
     
     fileprivate func addUser() {
@@ -77,7 +188,7 @@ class LoginViewController: UIViewController {
         
     }
     
-    fileprivate func executeQuery(_ query: [String : Any], _ res: inout AnyObject?) {
+    fileprivate func executeQuery(_ query: [String : Any], _ res: inout AnyObject?) -> Bool {
         if SecItemCopyMatching(query as CFDictionary, &res) == noErr {
             if let item = res as? [String : Any],
                let user = item [ kSecAttrAccount as String] as? String,
@@ -85,12 +196,15 @@ class LoginViewController: UIViewController {
                let pass = String(data: password, encoding: .utf8)
             {
                 print("User is \(user) and password is \(pass)")
+                return true
             }
             else
             {
                 print ("No data was stored")
+                return false
             }
         }
+        return false
     }
     
     fileprivate func createRegisterPage() {
