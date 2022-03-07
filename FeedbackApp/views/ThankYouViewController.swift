@@ -8,10 +8,14 @@
 import UIKit
 
 class ThankYouViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    //IB outlets
    
     @IBOutlet weak var labelThank: UILabel!
     
+    // Overall rating
     
+    var overalRating = 0
     
 
     override func viewDidLoad() {
@@ -19,6 +23,23 @@ class ThankYouViewController: UIViewController, UITableViewDelegate, UITableView
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    //IB Actions
+    
+    
+    @IBAction func submitOverallrating(_ sender: Any) {
+        let rating = Int64(overalRating)
+        
+        DataBaseHelper.dataBaseHelper.addOverallRating(newOverallRating: Int(rating))
+    }
+    
+    
+    
+    
+    
+    
+    
     
 
    //TABLE VIEW
@@ -52,6 +73,23 @@ class ThankYouViewController: UIViewController, UITableViewDelegate, UITableView
             return cell1star
         }
         
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.item {
+        case 0:
+            overalRating = 5
+            print(5)
+        case 1:
+            overalRating = 3
+            print(3)        case 2:
+            overalRating = 2
+        default :
+            overalRating = 0
+            print(2)
+            
+        }
         
     }
 }
