@@ -66,7 +66,8 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        
+        //transition to wellcome View Controller
+        //extract method in refactorin to be available to all views
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nexViewController = storyboard?.instantiateViewController(withIdentifier: "welcome") as? WelcomeViewController
         self.present(nexViewController!, animated: true, completion: nil)
