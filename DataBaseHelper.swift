@@ -102,7 +102,7 @@ class DataBaseHelper {
     }
     
     //get user rating
-    func getUserRating( name : String) -> Rating {
+   /* func getUserRating( name : String) -> Rating {
         
         var raiting = Rating()
         var fReq =  NSFetchRequest<NSFetchRequestResult>(entityName: "Rating")
@@ -121,5 +121,5 @@ class DataBaseHelper {
         catch {
             
         }
-        return raiting}
+        return raiting}*/
 }
