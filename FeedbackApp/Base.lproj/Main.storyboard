@@ -498,7 +498,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-KY-qVJ" customClass="LogAndRegisterButtons" customModule="FeedbackApp" customModuleProvider="target">
+
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q51-KY-qVJ">
+
                                 <rect key="frame" x="159" y="736" width="119" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -535,7 +539,11 @@
         <scene sceneID="j8e-qS-HUf">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="z41-1k-Ajk" customClass="ViewControllerHomePage" customModule="FeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
+
+                    <view key="view" contentMode="scaleToFill" id="4s4-Bp-Yex" customClass="FeedbackAppView" customModule="FeedbackApp" customModuleProvider="target">
+
                     <view key="view" contentMode="scaleToFill" id="4s4-Bp-Yex">
+
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -611,7 +619,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO3-x4-cqK">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AO3-x4-cqK" customClass="LogAndRegisterButtons" customModule="FeedbackApp" customModuleProvider="target">
                                 <rect key="frame" x="125" y="663" width="165" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -712,7 +720,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Htc-YM-V6J">
                                         <rect key="frame" x="105" y="526" width="118.5" height="106"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of3-85-W5j">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of3-85-W5j" customClass="LogAndRegisterButtons" customModule="FeedbackApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="118.5" height="49"/>
                                                 <color key="backgroundColor" red="0.16113901" green="0.69194033929999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -724,7 +732,7 @@
                                                     <action selector="signIn:" destination="6CJ-oZ-BoE" eventType="touchUpInside" id="iLi-x1-gSP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiw-Uw-3LI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiw-Uw-3LI" customClass="LogAndRegisterButtons" customModule="FeedbackApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="57" width="118.5" height="49"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Sign up">
@@ -833,14 +841,39 @@
             <point key="canvasLocation" x="-3346" y="-9"/>
         </scene>
     </scenes>
+
+    <designables>
+        <designable name="AO3-x4-cqK">
+            <size key="intrinsicContentSize" width="98" height="40.5"/>
+        </designable>
+        <designable name="Q51-KY-qVJ">
+            <size key="intrinsicContentSize" width="119" height="51"/>
+        </designable>
+        <designable name="aiw-Uw-3LI">
+            <size key="intrinsicContentSize" width="118.5" height="49"/>
+        </designable>
+        <designable name="of3-85-W5j">
+            <size key="intrinsicContentSize" width="111.5" height="49"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ktq-hT-uaU"/>
+        <segue reference="c5o-Ba-aQ3"/>
+        <segue reference="aFz-wf-rVR"/>
+
     <inferredMetricsTieBreakers>
         <segue reference="Ji6-LJ-grW"/>
         <segue reference="Hd4-5O-4eu"/>
+
     </inferredMetricsTieBreakers>
     <resources>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="backgroundColor">
+
+            <color red="0.97299998998641968" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+
             <color red="0.97268282312925169" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

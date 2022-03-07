@@ -13,6 +13,10 @@
 		45C0F3A227D478D500C7CC2C /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */; };
 		45C0F3C827D5647C00C7CC2C /* Rating+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3C627D5647C00C7CC2C /* Rating+CoreDataClass.swift */; };
 		45C0F3C927D5647C00C7CC2C /* Rating+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3C727D5647C00C7CC2C /* Rating+CoreDataProperties.swift */; };
+ 
+		45C0F3CB27D5C87E00C7CC2C /* FeedbackAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F3CA27D5C87E00C7CC2C /* FeedbackAppView.swift */; };
+
+
 		45EE864927D02F0B00909317 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864827D02F0B00909317 /* WelcomeViewController.swift */; };
 		45EE864D27D049A100909317 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE864C27D049A100909317 /* ServicesViewController.swift */; };
 		45EE865227D062DF00909317 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE865127D062DF00909317 /* QuestionTableViewCell.swift */; };
@@ -59,6 +63,10 @@
 		45C0F3A127D478D500C7CC2C /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 		45C0F3C627D5647C00C7CC2C /* Rating+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rating+CoreDataClass.swift"; sourceTree = "<group>"; };
 		45C0F3C727D5647C00C7CC2C /* Rating+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rating+CoreDataProperties.swift"; sourceTree = "<group>"; };
+
+		45C0F3CA27D5C87E00C7CC2C /* FeedbackAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAppView.swift; sourceTree = "<group>"; };
+
+
 		45EE864827D02F0B00909317 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		45EE864C27D049A100909317 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		45EE865127D062DF00909317 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
@@ -173,6 +181,7 @@
 				45F50DB127CF15A800E913A7 /* LaunchScreen.storyboard */,
 				45F50DB427CF15A800E913A7 /* Info.plist */,
 				45F50DAC27CF15A700E913A7 /* FeedbackApp.xcdatamodeld */,
+				45C0F3CA27D5C87E00C7CC2C /* FeedbackAppView.swift */,
 			);
 			path = FeedbackApp;
 			sourceTree = "<group>";
@@ -336,6 +345,7 @@
 				45C0F3A027D472AE00C7CC2C /* User+CoreDataProperties.swift in Sources */,
 				45C0F39F27D472AE00C7CC2C /* User+CoreDataClass.swift in Sources */,
 				45EE865427D075EC00909317 /* RoomViewController.swift in Sources */,
+				45C0F3CB27D5C87E00C7CC2C /* FeedbackAppView.swift in Sources */,
 				8419043827CF2B0700625628 /* ViewControllerHomePage.swift in Sources */,
 				45F50DAE27CF15A700E913A7 /* FeedbackApp.xcdatamodeld in Sources */,
 				4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */,
