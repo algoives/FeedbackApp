@@ -219,7 +219,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvU-d9-mOf">
-                                <rect key="frame" x="160" y="272" width="70" height="31"/>
+                                <rect key="frame" x="142" y="272" width="103" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="regular"/>
@@ -228,7 +228,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYB-6M-0Ok">
-                                <rect key="frame" x="271" y="272" width="88" height="31"/>
+                                <rect key="frame" x="296" y="272" width="88" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="bad"/>
@@ -255,7 +255,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQG-kt-pGu">
-                                <rect key="frame" x="261" y="406" width="98" height="31"/>
+                                <rect key="frame" x="291" y="406" width="98" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="bad"/>
@@ -279,15 +279,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="regular"/>
                                 <connections>
                                     <action selector="q3regularSelected:" destination="1bC-Ev-LQg" eventType="touchUpInside" id="TCF-2H-vpR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-tw-DUd">
-                                <rect key="frame" x="267" y="554" width="104" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="bad"/>
-                                <connections>
-                                    <action selector="q3badSelected:" destination="1bC-Ev-LQg" eventType="touchUpInside" id="5tJ-xG-dGU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU1-ei-1SU">
@@ -315,6 +306,15 @@
                                 <buttonConfiguration key="configuration" style="filled" title="submit"/>
                                 <connections>
                                     <action selector="submit:" destination="1bC-Ev-LQg" eventType="touchUpInside" id="0cP-IP-ArB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-tw-DUd">
+                                <rect key="frame" x="296" y="554" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="bad"/>
+                                <connections>
+                                    <action selector="q3badSelected:" destination="1bC-Ev-LQg" eventType="touchUpInside" id="5tJ-xG-dGU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -834,13 +834,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="9IP-Ih-3mq"/>
         <segue reference="Ji6-LJ-grW"/>
         <segue reference="Hd4-5O-4eu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="backgroundColor">
-            <color red="0.97268282312925169" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97299998998641968" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
