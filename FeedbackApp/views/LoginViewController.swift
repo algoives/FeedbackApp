@@ -82,39 +82,18 @@ class LoginViewController: UIViewController {
             {
                 print(username)
                 print(password)
+                
+                //create welcome page
+                //extract method in refactoring
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let nexViewController = storyboard?.instantiateViewController(withIdentifier: "welcome") as? WelcomeViewController
-                self.present(nexViewController!, animated: true, completion: nil)            }
+                self.present(nexViewController!, animated: true, completion: nil)
+                
+            }
+            
         } else {
             showAlertView(msg: "YOu are not register yet")
         }
-        
-        
-        //set up query
-        
-        /*let query : [String : Any] = [ kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : userText.text!, kSecReturnAttributes as String : true, kSecReturnData as String : true]
-        var res : CFTypeRef?
-        
-        // check if user and password exist in keychain
-        if SecItemCopyMatching(query as CFDictionary, &res) == noErr {
-            if let item = res as? [String : Any],
-               let user = item [ kSecAttrAccount as String] as? String,
-               let password = item [ kSecValueData as String] as? Data,
-               let pass = String(data: password, encoding: .utf8){
-                if(user != userText.text){
-                    showAlertView(msg: "Sorry ,the email provided doesnt exist in our database")
-                    return
-                }else if(pass != passwordText.text){
-                    showAlertView(msg: "Sorry, password is incorrect")
-                    return
-                }
-            }
-         
-        }*/
-        
-       
-        
-       
         
     }
     
@@ -125,6 +104,8 @@ class LoginViewController: UIViewController {
     @IBAction func signUp(_ sender: Any) {
 
         print("you tapped register button")
+        
+        //transition to register page programatically
         createRegisterPage()
 
     }

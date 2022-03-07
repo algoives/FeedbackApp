@@ -45,6 +45,81 @@ class DataBaseHelper {
         return users
     }
     
+    //add rating
     
+    func addRoomRating(newRoomRating: Int){
+        let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
+        
+        userRating.room = Int64(newRoomRating)
+        
+        do{
+            try contex?.save()
+            print("rating saved",userRating.room)
+        }catch{
+            print("can not save room rating")
+        }
+    }
     
+    func addGymRating(newGymRating: Int){
+        let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
+        
+        userRating.gym = Int64(newGymRating)
+        
+        do{
+            try contex?.save()
+            print("rating saved",userRating.gym)
+        }catch{
+            print("can not save room rating")
+        }
+    }
+    
+    func addFoodRating(newGymRating: Int){
+        let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
+        
+        userRating.food = Int64(newGymRating)
+        
+        do{
+            try contex?.save()
+            print("rating saved",userRating.food)
+        }catch{
+            print("can not save room rating")
+        }
+    }
+    
+    //get ratings
+    func getRating() -> [Rating]{
+        
+        var raitings = [Rating]()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Rating")
+        
+        do{
+            raitings = try contex?.fetch(fetchRequest) as! [Rating]
+        }catch{
+            print("cant not fech data")
+        }
+        
+        return raitings
+    }
+    
+    //get user rating
+   /* func getUserRating( name : String) -> Rating {
+        
+        var raiting = Rating()
+        var fReq =  NSFetchRequest<NSFetchRequestResult>(entityName: "Rating")
+        fReq.predicate = NSPredicate(format: "room == %@ ", room)
+        fReq.fetchLimit = 1
+        
+        do{
+            let req = try contex?.fetch(fReq) as! [Rating]
+            if(req.count != 0){
+                raiting = req.first as! Rating
+            }
+            else{
+                print("data not found")
+            }
+        }
+        catch {
+            
+        }
+        return raiting}*/
 }
