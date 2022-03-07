@@ -535,7 +535,7 @@
         <scene sceneID="j8e-qS-HUf">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="z41-1k-Ajk" customClass="ViewControllerHomePage" customModule="FeedbackApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4s4-Bp-Yex">
+                    <view key="view" contentMode="scaleToFill" id="4s4-Bp-Yex" customClass="TemplateView" customModule="FeedbackApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -834,7 +834,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9IP-Ih-3mq"/>
         <segue reference="Ji6-LJ-grW"/>
         <segue reference="Hd4-5O-4eu"/>
     </inferredMetricsTieBreakers>

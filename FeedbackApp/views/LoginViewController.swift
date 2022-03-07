@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         userText.layer.cornerRadius = 22
         passwordText.layer.cornerRadius = 22
         signInButton.layer.cornerRadius = 22
-        signInButton.layer.cornerRadius = 22
+        signUpButton.layer.cornerRadius = 22
         
     }
     
