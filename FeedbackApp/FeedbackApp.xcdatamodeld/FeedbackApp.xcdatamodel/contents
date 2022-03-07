@@ -3,6 +3,7 @@
     <entity name="Rating" representedClassName="Rating" syncable="YES">
         <attribute name="food" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="gym" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="overall" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="room" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User" inverseName="raiting" inverseEntity="User"/>
     </entity>
@@ -11,7 +12,7 @@
         <relationship name="raiting" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Rating" inverseName="user" inverseEntity="Rating"/>
     </entity>
     <elements>
+        <element name="Rating" positionX="-263.375" positionY="-285.68359375" width="128" height="104"/>
         <element name="User" positionX="-63" positionY="5.515625" width="128" height="73"/>
-        <element name="Rating" positionX="-263.375" positionY="-285.68359375" width="128" height="103"/>
     </elements>
 </model>

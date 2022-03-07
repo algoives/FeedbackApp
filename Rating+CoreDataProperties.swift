@@ -18,7 +18,8 @@ extension Rating {
 
     @NSManaged public var room: Int64
     @NSManaged public var gym: Int64
-    @NSManaged public var food: Int64}
+    @NSManaged public var food: Int64
+    @NSManaged public var overall: Int64}
 
 extension Rating : Identifiable {
 

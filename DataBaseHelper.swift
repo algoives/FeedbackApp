@@ -54,7 +54,7 @@ class DataBaseHelper {
         
         do{
             try contex?.save()
-            print("rating saved",userRating.room)
+            print("rating room saved",userRating.room)
         }catch{
             print("can not save room rating")
         }
@@ -67,7 +67,7 @@ class DataBaseHelper {
         
         do{
             try contex?.save()
-            print("rating saved",userRating.gym)
+            print("rating gym saved",userRating.gym)
         }catch{
             print("can not save room rating")
         }
@@ -80,7 +80,7 @@ class DataBaseHelper {
         
         do{
             try contex?.save()
-            print("rating saved",userRating.food)
+            print("rating foo saved",userRating.food)
         }catch{
             print("can not save room rating")
         }
@@ -122,4 +122,17 @@ class DataBaseHelper {
             
         }
         return raiting}*/
-}
+    
+    //add overall rating
+    func addOverallRating(newOverallRating: Int){
+        let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
+        
+        userRating.overall = Int64(newOverallRating)
+        
+        do{
+            try contex?.save()
+            print("rating over all saved",userRating.overall)
+        }catch{
+            print("can not save room rating")
+        }
+    }}
