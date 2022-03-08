@@ -31,7 +31,19 @@ class DataBaseHelper {
     }
     
     //get data
-    
+    func getUser() -> [User]{
+        
+        var users = [User]()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        
+        do{
+            users = try contex?.fetch(fetchRequest) as! [User]
+        }catch{
+            print("cant not fech data")
+        }
+        
+        return users
+    }
     
     //add rating
     
@@ -74,36 +86,6 @@ class DataBaseHelper {
         }
     }
     
-    //add overall rating
-    func addOverallRating(newOverallRating: Int){
-        let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
-        
-        userRating.overall = Int64(newOverallRating)
-        
-        do{
-            try contex?.save()
-            print("rating over all saved",userRating.overall)
-        }catch{
-            print("can not save room rating")
-        }
-    }
-    
-    
-    //get user
-    
-    func getUser() -> [User]{
-        
-        var users = [User]()
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-        
-        do{
-            users = try contex?.fetch(fetchRequest) as! [User]
-        }catch{
-            print("cant not fech data")
-        }
-        
-        return users
-    }
     //get ratings
     func getRating() -> [Rating]{
         
@@ -119,14 +101,59 @@ class DataBaseHelper {
         return raitings
     }
     
-    // Get one rating
-    func getOneRating(){
+    func getOneData( n : String) -> Rating {
         
+        var st = Rating()
+        var fReq =  NSFetchRequest<NSFetchRequestResult>(entityName: "Rating")
+        fReq.predicate = NSPredicate(format: "user.email == %@ ", n)
+        fReq.fetchLimit = 1
+        
+        do{
+            let req = try contex?.fetch(fReq) as! [Rating]
+            if(req.count != 0){
+                st = req.first as! Rating
+            }
+            else{
+                print("data not found")
+            }
+        }
+        catch {
+            
+        }
+        return st
     }
+    //get user rating
+   /* func getUserRating( name : String) -> Rating {
+        
+        var raiting = Rating()
+        var fReq =  NSFetchRequest<NSFetchRequestResult>(entityName: "Rating")
+        fReq.predicate = NSPredicate(format: "room == %@ ", room)
+        fReq.fetchLimit = 1
+        
+        do{
+            let req = try contex?.fetch(fReq) as! [Rating]
+            if(req.count != 0){
+                raiting = req.first as! Rating
+            }
+            else{
+                print("data not found")
+            }
+        }
+        catch {
+            
+        }
+        return raiting}*/
     
-    // get one user
-  
-    
-    
-    
-}
+    //add overall rating
+    func addOverallRating(newOverallRating: Int){
+        let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
+        
+        userRating.overall = Int64(newOverallRating)
+        
+        do{
+            try contex?.save()
+            print("rating over all saved",userRating.overall)
+        }catch{
+            print("can not save room rating")
+        }
+    }}
