@@ -28,11 +28,10 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
-        userText.layer.cornerRadius = 22
+       /* userText.layer.cornerRadius = 22
         passwordText.layer.cornerRadius = 22
         signInButton.layer.cornerRadius = 22
-        signUpButton.layer.cornerRadius = 22
+        signUpButton.layer.cornerRadius = 22*/
         
     }
     

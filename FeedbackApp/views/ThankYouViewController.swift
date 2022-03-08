@@ -32,23 +32,6 @@ class ThankYouViewController: UIViewController, UITableViewDelegate, UITableView
         let rating = Int64(overalRating)
         
         DataBaseHelper.dataBaseHelper.addOverallRating(newOverallRating: Int(rating))
-        
-       
-        
-        var message : String = " "
-        var cupon = Int.random(in: 1...10000)
-        
-        
-        if (rating >= 8){
-            message = "We glad you enjoy our services,we aprecciate your feedback,apply this number cupon for a discount in your next vacation : \(cupon)"
-        }else if (rating >= 5 || rating >= 7){
-            message = "Your opinion is very inportant for us ,we invite you to stay whit us again and we promise we deliver a wow next time ,ples copy the next cupon number for big discounts and surprises \(cupon)"
-        }else if (rating < 5){
-            message = "We sorry about your experiense, wtake our cupon for free vacation : \(cupon)"
-        }
-        
-        showAlertView(msg: message)
-        
     }
     
     
@@ -98,7 +81,6 @@ class ThankYouViewController: UIViewController, UITableViewDelegate, UITableView
         case 0:
             overalRating = 5
             print(5)
-            
         case 1:
             overalRating = 3
             print(3)        case 2:
@@ -109,14 +91,5 @@ class ThankYouViewController: UIViewController, UITableViewDelegate, UITableView
             
         }
         
-    }
-    
-    
-    func showAlertView(msg: String){
-        let alertController = UIAlertController(title: "Was a pleasurue to Serve you", message: msg, preferredStyle: .alert)
-        let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
-        alertController.addAction(okButton)
-        present(alertController, animated: true, completion: nil)
     }
 }
