@@ -104,12 +104,8 @@ class RoomViewController: UIViewController {
     //Submit Action
     
     @IBAction func submit(_ sender: Any) {
-        let rating = (q1score + q2score + q3score)/3
-        
-        DataBaseHelper.dataBaseHelper.addRoomRating(newRoomRating: rating)
-        
-        print("room rating is",rating)
-        
+        var rating = (q1score + q2score + q3score)/3
+       
     }
     
     //Privet functions
@@ -122,5 +118,13 @@ class RoomViewController: UIViewController {
         unselected2.backgroundColor = UIColor.lightGray
     }
     
+    
+    func showAlertView(msg: String){
+        let alertController = UIAlertController(title: "Was a pleasurue to Serve you", message: msg, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alertController.addAction(okButton)
+        present(alertController, animated: true, completion: nil)
+    }
     
 }

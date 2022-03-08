@@ -2,7 +2,7 @@
 //  Rating+CoreDataProperties.swift
 //  FeedbackApp
 //
-//  Created by Ives Murillo on 3/6/22.
+//  Created by Ives Murillo on 3/8/22.
 //
 //
 
@@ -16,10 +16,13 @@ extension Rating {
         return NSFetchRequest<Rating>(entityName: "Rating")
     }
 
-    @NSManaged public var room: Int64
-    @NSManaged public var gym: Int64
     @NSManaged public var food: Int64
-    @NSManaged public var overall: Int64}
+    @NSManaged public var gym: Int64
+    @NSManaged public var overall: Int64
+    @NSManaged public var room: Int64
+    @NSManaged public var user: User?
+
+}
 
 extension Rating : Identifiable {
 

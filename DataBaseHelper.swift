@@ -101,6 +101,27 @@ class DataBaseHelper {
         return raitings
     }
     
+    func getOneData( n : String) -> Rating {
+        
+        var st = Rating()
+        var fReq =  NSFetchRequest<NSFetchRequestResult>(entityName: "Rating")
+        fReq.predicate = NSPredicate(format: "user.email == %@ ", n)
+        fReq.fetchLimit = 1
+        
+        do{
+            let req = try contex?.fetch(fReq) as! [Rating]
+            if(req.count != 0){
+                st = req.first as! Rating
+            }
+            else{
+                print("data not found")
+            }
+        }
+        catch {
+            
+        }
+        return st
+    }
     //get user rating
    /* func getUserRating( name : String) -> Rating {
         
