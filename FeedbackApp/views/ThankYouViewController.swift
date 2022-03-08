@@ -33,8 +33,7 @@ class ThankYouViewController: UIViewController, UITableViewDelegate, UITableView
         
         DataBaseHelper.dataBaseHelper.addOverallRating(newOverallRating: Int(rating))
         
-        var user1 = DataBaseHelper.dataBaseHelper.getOneData(n: "asha")
-        print(user1.overall)
+       
         
         var message : String = " "
         var cupon = Int.random(in: 1...10000)
