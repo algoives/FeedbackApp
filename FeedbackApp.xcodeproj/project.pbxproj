@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451C08E027D7F02600E512AC /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C08DF27D7F02600E512AC /* FoodViewController.swift */; };
+		451C08E227D7FA3700E512AC /* GyMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C08E127D7FA3700E512AC /* GyMViewController.swift */; };
 		4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595E17727D326A400D26A3C /* RegisterViewController.swift */; };
 		45C0F39F27D472AE00C7CC2C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */; };
 		45C0F3A027D472AE00C7CC2C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		451C08DF27D7F02600E512AC /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		451C08E127D7FA3700E512AC /* GyMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyMViewController.swift; sourceTree = "<group>"; };
 		4595E17727D326A400D26A3C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		45C0F39D27D472AE00C7CC2C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		45C0F39E27D472AE00C7CC2C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				45EE865327D075EC00909317 /* RoomViewController.swift */,
 				45EE865527D08ED800909317 /* ThankYouViewController.swift */,
 				4595E17727D326A400D26A3C /* RegisterViewController.swift */,
+				451C08DF27D7F02600E512AC /* FoodViewController.swift */,
+				451C08E127D7FA3700E512AC /* GyMViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F50DD727CF593300E913A7 /* LoginViewController.swift in Sources */,
+				451C08E227D7FA3700E512AC /* GyMViewController.swift in Sources */,
 				45EE865A27D0A02400909317 /* Stars3TableViewCell.swift in Sources */,
 				45EE865227D062DF00909317 /* QuestionTableViewCell.swift in Sources */,
 				45EE865827D09A7200909317 /* OverAllTableViewCell.swift in Sources */,
@@ -342,6 +349,7 @@
 				45C0F3CB27D5C87E00C7CC2C /* FeedbackAppView.swift in Sources */,
 				8419043827CF2B0700625628 /* ViewControllerHomePage.swift in Sources */,
 				45F50DAE27CF15A700E913A7 /* FeedbackApp.xcdatamodeld in Sources */,
+				451C08E027D7F02600E512AC /* FoodViewController.swift in Sources */,
 				4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */,
 				45EE865627D08ED800909317 /* ThankYouViewController.swift in Sources */,
 				45F50DA627CF15A700E913A7 /* SceneDelegate.swift in Sources */,
