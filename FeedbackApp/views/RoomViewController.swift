@@ -9,7 +9,16 @@ import UIKit
 
 class RoomViewController: UIViewController {
     
-    //IB outlets
+    
+    
+    
+    //Data to pass in segue
+    var score : Int32 = 0
+    
+    
+    //IBoutlets
+    @IBOutlet weak var ratingLabel: UILabel!
+    
     //question 1
     @IBOutlet weak var q1Good: UIButton!
     
@@ -45,6 +54,11 @@ class RoomViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let scv = segue.destination as! ThankYouViewController
+        scv.roomScore = Int(score)
+    }
+    
     
 //IB ACTIONS
    
@@ -104,11 +118,11 @@ class RoomViewController: UIViewController {
     //Submit Action
     
     @IBAction func submit(_ sender: Any) {
-        let rating = (q1score + q2score + q3score)/3
+        score = Int32((q1score + q2score + q3score)/3)
         
-        DataBaseHelper.dataBaseHelper.addRoomRating(newRoomRating: rating)
-        
-        print("room rating is",rating)
+      //  DataBaseHelper.dataBaseHelper.addRoomRating(newRoomRating: rating)
+        //ratingLabel.text = String(rating)
+        print("room rating is",score)
         
     }
     

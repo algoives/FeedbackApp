@@ -9,6 +9,8 @@ import UIKit
 
 class FoodViewController: UIViewController {
     
+    
+    var score : Int32 = 0
     //IB Ouitlets
     //Q1
    
@@ -55,7 +57,10 @@ class FoodViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let scv = segue.destination as! ThankYouViewController
+        scv.foodScore = Int(score)
+    }*/
 //Ib Actions
     //q1
     @IBAction func q1GoodSelected(_ sender: Any) {
@@ -109,12 +114,12 @@ class FoodViewController: UIViewController {
     
     
     
+    
     @IBAction func submit(_ sender: Any) {
-        let rating = (q1score + q2score + q3score)/3
+        score = Int32((q1score + q2score + q3score)/3)
         
-        DataBaseHelper.dataBaseHelper.addFoodRating(newGymRating: rating)
-        
-        print("Food rating is",rating)
+       // DataBaseHelper.dataBaseHelper.addFoodRating(newGymRating: rating)
+             print("Food rating is",score)
         
     }
     

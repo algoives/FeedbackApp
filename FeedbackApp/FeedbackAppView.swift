@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 
 class FeedbackAppView : UIView{
-    required init?(coder: NSCoder) {
+  /*  required init?(coder: NSCoder) {
         super.init(coder: coder)
         
-        FeedbackAppView.appearance().backgroundColor = UIColor.systemBackground
+        FeedbackAppView.appearance().backgroundColor = UIColor.white
         
-        UIButton.appearance().backgroundColor = UIColor.darkGray
+        UIButton.appearance().backgroundColor = UIColor.blue
         UIButton.appearance().layer.cornerRadius = 22
         // appearance().layer.cornerRadius = 22
         
@@ -29,7 +29,7 @@ class FeedbackAppView : UIView{
     }
     
     func setProperties(){
-        LogAndRegisterButtons.appearance().backgroundColor = UIColor.purple
+        LogAndRegisterButtons.appearance().backgroundColor = UIColor.blue
       
         var cornerRadius: CGFloat = 22.0 {
                 didSet {
@@ -37,5 +37,5 @@ class FeedbackAppView : UIView{
                     layer.masksToBounds = cornerRadius > 0
                 }
             }
-    }
+    }*/
 }

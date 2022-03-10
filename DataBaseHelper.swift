@@ -28,10 +28,14 @@ class DataBaseHelper {
             print("user coudnt be save")
         }
         
+        
+       
+        
     }
+    //add rating to user
     
     //get data
-    func getUser() -> [User]{
+    func getUsers() -> [User]{
         
         var users = [User]()
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
@@ -46,11 +50,42 @@ class DataBaseHelper {
     }
     
     //add rating
+    func addRating(newRoomRating: Int32, newFoodRating: Int32,newGymRating: Int32, newOverall: Int32){
+        let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
+        
+        
+        var user = User()
+        var fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        do{
+            let req = try contex?.fetch(fetchRequest) as! [User]
+            if(req.count != 0){
+                user = req.first as! User
+            }
+                
+        }catch{
+            
+        }
+        
+        userRating.room = newRoomRating
+        userRating.gym = newGymRating
+        userRating.food = newFoodRating
+        userRating.overall = newOverall
+        userRating.ratingToUser = user
+        
+        do{
+            try contex?.save()
+            print("rating room saved",userRating.room)
+        }catch{
+            print("can not save room rating")
+        }
+    }
+    
+    
     
     func addRoomRating(newRoomRating: Int){
         let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
         
-        userRating.room = Int64(newRoomRating)
+        userRating.room = Int32(newRoomRating)
         
         do{
             try contex?.save()
@@ -63,7 +98,7 @@ class DataBaseHelper {
     func addGymRating(newGymRating: Int){
         let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
         
-        userRating.gym = Int64(newGymRating)
+        userRating.gym = Int32(newGymRating)
         
         do{
             try contex?.save()
@@ -73,10 +108,10 @@ class DataBaseHelper {
         }
     }
     
-    func addFoodRating(newGymRating: Int){
+    func addFoodRating(newGymRating: Int32){
         let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
         
-        userRating.food = Int64(newGymRating)
+        userRating.food = newGymRating
         
         do{
             try contex?.save()
@@ -127,7 +162,7 @@ class DataBaseHelper {
     func addOverallRating(newOverallRating: Int){
         let userRating = NSEntityDescription.insertNewObject(forEntityName: "Rating", into: contex!) as! Rating
         
-        userRating.overall = Int64(newOverallRating)
+        userRating.overall = Int32(newOverallRating)
         
         do{
             try contex?.save()
