@@ -9,24 +9,37 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
-    //IB outlets
+    //IB outlets\\
+    
+    var username = " "
     
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var confirmedPassword: UITextField!
-    
+    @IBOutlet weak var submitbutton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        emailTextField.layer.cornerRadius = 22
+        passwordTextField.layer.cornerRadius = 22
+        confirmedPassword.layer.cornerRadius = 22
+        submitbutton.layer.cornerRadius = 22
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
-   
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Disposse resosurces
+        
+    }
   
+    
     
     @IBAction func registerUser(_ sender: Any) {
         //get input
@@ -77,9 +90,20 @@ class RegisterViewController: UIViewController {
         
         DataBaseHelper.dataBaseHelper.addUser(newEmail: userEmail)
         
+        //pass data to segue
+        
+        self.username = emailTextField.text!
+       // performSegue(withIdentifier: "registerToWelcome", sender: nil)
         
         
     }
+    
+    
+    //segue
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! WelcomeViewController
+        vc.finalName = self.username
+    }*/
     
     
     

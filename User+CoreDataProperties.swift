@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  FeedbackApp
 //
-//  Created by Ives Murillo on 3/5/22.
+//  Created by Ives Murillo on 3/9/22.
 //
 //
 
@@ -17,6 +17,7 @@ extension User {
     }
 
     @NSManaged public var email: String?
+    @NSManaged public var userToRating: Rating?
 
 }
 

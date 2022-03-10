@@ -28,10 +28,10 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-       /* userText.layer.cornerRadius = 22
+        userText.layer.cornerRadius = 22
         passwordText.layer.cornerRadius = 22
         signInButton.layer.cornerRadius = 22
-        signUpButton.layer.cornerRadius = 22*/
+        signUpButton.layer.cornerRadius = 22
         
     }
     
@@ -111,7 +111,7 @@ class LoginViewController: UIViewController {
     
     //Alert function
     func showAlertView(msg: String){
-        let alertController = UIAlertController(title: "Usder Autentication", message: msg, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "User Autentication", message: msg, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "OK", style: .default, handler: nil)
         
         alertController.addAction(okButton)

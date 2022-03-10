@@ -8,6 +8,10 @@
 import UIKit
 
 class GyMViewController: UIViewController {
+    
+    
+    //Data to pass in segue
+    var score : Int32 = 0
 
     //IB Ouitlets
     //Q1
@@ -44,7 +48,7 @@ class GyMViewController: UIViewController {
     var q3score = 0
     
     
-    
+  //  public var gymscore : Int = 5
     
     
     
@@ -55,6 +59,12 @@ class GyMViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    //prepare data for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let scv = segue.destination as! ThankYouViewController
+        scv.gymScore = Int(score)
+    }
+    
     
 //Ib Actions
     //q1
@@ -108,13 +118,19 @@ class GyMViewController: UIViewController {
     }
     
     
+    @IBAction func nextAction(_ sender: Any) {
+        performSegue(withIdentifier: "gymtothank", sender: nil)
+        
+    }
+    
+    
     
     @IBAction func submit(_ sender: Any) {
-        let rating = (q1score + q2score + q3score)/3
+        score = Int32(q1score + q2score + q3score)/3
         
-        DataBaseHelper.dataBaseHelper.addGymRating(newGymRating: rating)
+        //DataBaseHelper.dataBaseHelper.addGymRating(newGymRating: rating)
         
-        print("Gym rating is",rating)
+        print("Gym rating is",score)
         
     }
     
