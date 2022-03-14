@@ -19,18 +19,18 @@ class ThankYouViewController: UIViewController, UITableViewDelegate, UITableView
     var overalRating = 0
     
     //data to recive
-   var roomScore = 0
-   var foodScore = 0
-   var gymScore = 0
+    var roomScore = 0
+    var foodScore = Int.random(in: 1...5)
+    var gymScore = Int.random(in: 1...5)
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        rooratinglabel.text = String(gymScore)
+        /*rooratinglabel.text = String(gymScore)
         rooratinglabel.text = String(foodScore)
         rooratinglabel.text = String(roomScore)
-        
+        */
     }
 
     

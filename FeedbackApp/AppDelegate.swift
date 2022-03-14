@@ -4,7 +4,7 @@
 //
 //  Created by Ives Murillo on 3/1/22.
 //
-
+import SwiftUI
 import UIKit
 import CoreData
 

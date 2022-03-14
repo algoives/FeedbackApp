@@ -60,10 +60,7 @@ class GyMViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     //prepare data for segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let scv = segue.destination as! ThankYouViewController
-        scv.gymScore = Int(score)
-    }
+   
     
     
 //Ib Actions
@@ -139,8 +136,8 @@ class GyMViewController: UIViewController {
     fileprivate func selectButton(_ selected : UIButton,_ unselected1 : UIButton,_ unselected2: UIButton
     ) {
         selected.backgroundColor = UIColor.darkGray
-        unselected1.backgroundColor = UIColor.lightGray
-        unselected2.backgroundColor = UIColor.lightGray
+        unselected1.backgroundColor = UIColor.white
+        unselected2.backgroundColor = UIColor.white
     }
     
 }

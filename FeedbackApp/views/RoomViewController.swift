@@ -54,10 +54,7 @@ class RoomViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let scv = segue.destination as! ThankYouViewController
-        scv.roomScore = Int(score)
-    }
+   
     
     
 //IB ACTIONS
@@ -132,8 +129,8 @@ class RoomViewController: UIViewController {
     fileprivate func selectButton(_ selected : UIButton,_ unselected1 : UIButton,_ unselected2: UIButton
     ) {
         selected.backgroundColor = UIColor.darkGray
-        unselected1.backgroundColor = UIColor.lightGray
-        unselected2.backgroundColor = UIColor.lightGray
+        unselected1.backgroundColor = UIColor.white
+        unselected2.backgroundColor = UIColor.white
     }
     
     

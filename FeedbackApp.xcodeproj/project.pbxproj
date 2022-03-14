@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450EA40B27DC50240006DCA8 /* video 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 450EA40A27DC50240006DCA8 /* video 2.mp4 */; };
 		451C08E027D7F02600E512AC /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C08DF27D7F02600E512AC /* FoodViewController.swift */; };
 		451C08E227D7FA3700E512AC /* GyMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C08E127D7FA3700E512AC /* GyMViewController.swift */; };
 		4595E17827D326A400D26A3C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595E17727D326A400D26A3C /* RegisterViewController.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450EA40A27DC50240006DCA8 /* video 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "video 2.mp4"; path = "../../../Downloads/video 2.mp4"; sourceTree = "<group>"; };
 		451C08DF27D7F02600E512AC /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		451C08E127D7FA3700E512AC /* GyMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyMViewController.swift; sourceTree = "<group>"; };
 		4595E17727D326A400D26A3C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				45F50DA727CF15A700E913A7 /* ViewController.swift */,
 				45F50DA927CF15A700E913A7 /* Main.storyboard */,
 				45F50DAF27CF15A800E913A7 /* Assets.xcassets */,
+				450EA40A27DC50240006DCA8 /* video 2.mp4 */,
 				45F50DB127CF15A800E913A7 /* LaunchScreen.storyboard */,
 				45F50DB427CF15A800E913A7 /* Info.plist */,
 				45F50DAC27CF15A700E913A7 /* FeedbackApp.xcdatamodeld */,
@@ -310,6 +313,7 @@
 				45F50DB327CF15A800E913A7 /* LaunchScreen.storyboard in Resources */,
 				45F50DB027CF15A800E913A7 /* Assets.xcassets in Resources */,
 				45F50DAB27CF15A700E913A7 /* Main.storyboard in Resources */,
+				450EA40B27DC50240006DCA8 /* video 2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

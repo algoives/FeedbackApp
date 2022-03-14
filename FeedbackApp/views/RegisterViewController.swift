@@ -83,6 +83,7 @@ class RegisterViewController: UIViewController {
         //extract method in refactorin to be available to all views
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nexViewController = storyboard?.instantiateViewController(withIdentifier: "welcome") as? WelcomeViewController
+        nexViewController?.finalName = emailTextField.text!
         self.present(nexViewController!, animated: true, completion: nil)
         
         

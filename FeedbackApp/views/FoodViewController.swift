@@ -128,8 +128,8 @@ class FoodViewController: UIViewController {
     fileprivate func selectButton(_ selected : UIButton,_ unselected1 : UIButton,_ unselected2: UIButton
     ) {
         selected.backgroundColor = UIColor.darkGray
-        unselected1.backgroundColor = UIColor.lightGray
-        unselected2.backgroundColor = UIColor.lightGray
+        unselected1.backgroundColor = UIColor.white
+        unselected2.backgroundColor = UIColor.white
     }
     
     
